@@ -1,7 +1,7 @@
 //Do stuff (google java 2d game tutorial-> zetcode & gametutorial)
 import java.awt.EventQueue;
 import javax.swing.JFrame;
-import java.awt.event.KeyEvent;//Selvit�
+import java.awt.event.KeyEvent;//Selvitä miten toimii
 public class Application extends JFrame{
 	
 	public Application(){
@@ -14,12 +14,12 @@ public class Application extends JFrame{
 		
 		add(new Board());
 		
-		this.setUndecorated(false);
+		this.setUndecorated(false);//Poistaa reunat
 		//this.setExtendedState(this.MAXIMIZED_BOTH);
 		
 		setTitle("Application");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Sulkee ohjelman, kun ikkuna suljetaan
+		setLocationRelativeTo(null);//Asettaa ikkunan keskelle näyttöä
 		
 	}
 	
@@ -31,7 +31,7 @@ public class Application extends JFrame{
 			public void run(){
 				
 				Application ex = new Application();
-				ex.setVisible(true);
+				ex.setVisible(true);//Asettaa ikkunasta näkyvän
 				
 			}
 			
