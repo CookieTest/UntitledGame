@@ -15,9 +15,9 @@ public class Application extends JFrame{
 		add(new Board());
 		
 		this.setUndecorated(false);//Poistaa reunat
-		//this.setExtendedState(this.MAXIMIZED_BOTH);
+		//this.setExtendedState(this.MAXIMIZED_BOTH);//Asettaa fullscreeniin
 		
-		setTitle("Application");
+		setTitle("Application");//Vaihtaa ohjelman nimen ikkunana yläreunassa.
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Sulkee ohjelman, kun ikkuna suljetaan
 		setLocationRelativeTo(null);//Asettaa ikkunan keskelle näyttöä
 		
@@ -31,7 +31,7 @@ public class Application extends JFrame{
 			public void run(){
 				
 				Application ex = new Application();
-				ex.setVisible(true);//Asettaa ikkunasta näkyvän
+				ex.setVisible(true);//Asettaa ikkunan näkyviin
 				
 			}
 			
